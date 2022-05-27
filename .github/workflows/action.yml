@@ -47,3 +47,5 @@ jobs:
         script: |
             docker stop web1 && docker rm web1
             docker run -d -it -p 80:8080 --name web1 alejandromorenobea1/maven-app
+            sleep 60
+            curl -l ${{secrets.HOSTNAME}}
