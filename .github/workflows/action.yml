@@ -47,3 +47,4 @@ jobs:
         script: |
             docker stop web1 && docker rm web1
             docker run -d -p 80:80 --name web1 alejandromorenobea1/maven-app
+#a
