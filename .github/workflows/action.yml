@@ -46,4 +46,4 @@ jobs:
         port: 22  # ${{ secrets.PORT }}
         script: |
             docker stop web1 && docker rm web1
-            docker run -d -p 80:8080 --name web1 alejandromorenobea1/maven-app
+            docker run -d -it -p 80:8080 --name web1 alejandromorenobea1/maven-app
